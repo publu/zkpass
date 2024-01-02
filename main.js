@@ -63,7 +63,6 @@ const user_address = '0x7739e567b9626ca241bdc5528343f92f7e59af37' // whale on sc
  async function main() {
   const state_root = await get_state_root(block_number); // From your existing code
   const storage_key = await get_storage_key(token_address, user_address, block_number);
-  const expected_value = "4901428453420949724217"; // Updated expected value with 18 decimals
   const proof = await get_proof(token_address, [storage_key], block_number);
   // console.log(proof['storageProof']);
   console.log(proof)
@@ -72,7 +71,6 @@ const user_address = '0x7739e567b9626ca241bdc5528343f92f7e59af37' // whale on sc
     account: token_address,
     storage: storage_key,
     expectedRoot: proof.storageHash,
-    expectedValue: expected_value,
     accountProof: proof.accountProof.map(ap => ap),
     storageProof: proof.storageProof[0].proof.map(sp => sp),
   };
