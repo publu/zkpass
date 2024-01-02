@@ -14,7 +14,7 @@ const w3 = new Web3(httpProvider);
 
 const block_number = 2721258;
 const token_address = '0x5300000000000000000000000000000000000004' // weth address 
-const user_address = '0x7739e567b9626ca241bdc5528343f92f7e59af37' // whale on scroll
+const user_address = '0x7739e567b9626ca241bdc5528343f92f7e59af37' // whale on scroll sepolia
 
 /*
   Goal is to get the user's balance storage proof and verify it on the verifier contract (https://sepolia.scrollscan.dev/address/0x092bfFf60A8942d2cAb4D12c7aF862bF74abADE5)
