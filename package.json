@@ -1,0 +1,19 @@
+{
+  "name": "zkpass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ethers": "^6.9.1",
+    "web3": "^4.3.0",
+    "web3-core-helpers": "^1.10.3",
+    "web3-eth": "^4.3.1",
+    "web3-eth-contract": "^4.1.4",
+    "web3-utils": "^4.1.0"
+  }
+}
