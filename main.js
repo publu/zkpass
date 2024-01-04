@@ -55,7 +55,7 @@ const user_address = '0x7739e567b9626ca241bdc5528343f92f7e59af37' // whale on sc
  }
 
  async function verify_proof(contractAddress, storageKey, proof) {
-   const verifierAddress = '0x092bfFf60A8942d2cAb4D12c7aF862bF74abADE5';
+   const verifierAddress = '0xd2feb9a618bccab6521053dce63d2bfe855afdd9';
    const verifier = new w3.eth.Contract([
       {"inputs":[{"internalType":"address","name":"account","type":"address"},{"internalType":"bytes32","name":"storageKey","type":"bytes32"},{"internalType":"bytes","name":"proof","type":"bytes"}],"name":"verifyZkTrieProof","outputs":[{"internalType":"bytes32","name":"stateRoot","type":"bytes32"},{"internalType":"bytes32","name":"storageValue","type":"bytes32"}],"stateMutability":"view","type":"function"}
    ], verifierAddress);
